@@ -34,8 +34,8 @@
           </summary>
         <ul>
           <!-- <div class="item insertar">#2 item</div> -->
-          <li><a href="/">Insertar Trabajo</a></li>
-          <li><a href="">Insertar Estudios</a></li>
+          <li ><span onclick="primerForm()">Insertar Trabajo</span></li>
+          <li><span onclick="segundoForm()">Insertar Estudios</span></li>
           <li><a href="">Insertar Proyectos</a></li>
           <li><a href="">Insertar Habilidades</a></li>
           <li><a href="">Insertar Lenguajes</a></li>
@@ -55,10 +55,11 @@
         </ol>
         </details>
       </nav>
+      <div onclick="primeraImagen()">Insertar trabajo</div>
     </div>
     <div class="right">
       <!-- <a href="php/cerrarSesion.php">Cerrar Sesion</a> -->
-      <div class="containerModal">
+      <div class="containerModal" id="container-Modal">
         <div class="contenidoModal">
           <form action="">
             <h3>Ingreso trabajo</h3>
@@ -75,23 +76,35 @@
               <input type="date" name="fechaFin" >
             </div>
             <div>
-              <input type="submit" value="Enviar">
+              <input class="submitBtn" type="submit" value="Enviar">
             </div>
           </form>
         </div>
+        
       </div>
+      <div class="containerModal" id="container-Modal2">
+        <div class="contenidoModal">
+          <form action="">
+            <h3>Ingreso Estudios</h3>
+            <div>
+              <input type="text" name="nombre" placeholder="Nombre de la Empresa">
+            </div>
+            <div>
+              <input type="text" name="puesto" placeholder="Puesto en la empresa">
+            </div>
+            <div>
+              <input type="date" name="fechaInicio">
+            </div>
+            <div>
+              <input type="date" name="fechaFin" >
+            </div>
+            <div>
+              <input class="submitBtn" type="submit" value="Enviar">
+            </div>
+          </form>
+        </div>
     </div>
   </div>
-  <script>
-    const $detailsList = document.querySelectorAll('details')
-    $detailsList.forEach(($details) =>{
-      $details.querySelector('summary').addEventListener('click', expand)
-    })
-    function expand(){
-      $detailsList.forEach(($details) =>{
-        $details.removeAttribute('open')
-      })
-    }
-  </script>
+  <script src="js/main.js"></script>
 </body>
 </html>

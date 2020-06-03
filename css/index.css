@@ -44,11 +44,12 @@ summary {
   align-items: center;
   justify-items: center;
   justify-content: center;
+
   /* width: 99%;
   height: 100%; */
 }
 .containerModal {
-  display: flex;
+  display: none;
   justify-content: center;
   border: 1px solid black;
   width: 80%;
@@ -61,12 +62,24 @@ summary {
   height: 100%;
   border-radius: 25px;
   background-color: white;
+  /* position: relative; */
 }
 .containerModal form {
+  /* position: relative;
+  top: 50%;
+  right: 50%;
+  bottom: 50%;
+  left: 50%; */
+  padding: 15px;
   text-align: center;
   border: 1px solid black;
   width: 60%;
 }
 .containerModal input {
-  width: 60%;
+  margin: 10px;
+  padding: 10px;
+  width: 70%;
+}
+.submitBtn {
+  border-radius: 25px;
 }
