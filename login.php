@@ -42,14 +42,14 @@
               <i class="ico fas fa-user"></i>
             </div>
             <h5>Usuario</h5>
-            <input class="inputName input" id="inputForm" type="text" name="usuario1">
+            <input class="inputName input" id="inputForm" autocomplete="off" type="text" name="usuario1">
           </div>
           <div class="containerPassword conta">
             <div class="icon">
               <i class="ico fas fa-lock"></i>
             </div>
             <h5>Contraseña</h5>
-            <input class="inputPassword input" id="inputForm" type="password" name="contra">
+            <input class="inputPassword input" id="inputForm" autocomplete="off" type="password" name="contra">
           </div>
           <input  type="submit" class="btnSubmit" value="Login" />
         </form>
