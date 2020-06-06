@@ -1,7 +1,7 @@
 <?php 
-  $server1 = "localhost";
+  $server = "localhost";
   $usuario = "root";
   $contra = "";
-  $db = "proyectoIntecap";
-  $proyecto_Conex = mysqli_connect($server1, $usuario, $contra, $db);
+  $db = "proyectointecap";
+  $proyecto_Conex = mysqli_connect($server, $usuario, $contra, $db);
 ?>

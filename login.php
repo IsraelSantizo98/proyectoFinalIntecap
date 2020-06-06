@@ -10,6 +10,7 @@
       while($r = mysqli_fetch_assoc($query)){
         $_SESSION['loggedin'] = true;
         $_SESSION['usuario'] = $usuario;
+        $_SESSION['contra'] = $contrasenia;
         header ('location: index.php');
       }
     }

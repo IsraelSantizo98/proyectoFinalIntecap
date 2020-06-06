@@ -1,36 +1,104 @@
+:root {
+  --colorPrincipal: #f1f1f1;
+  --colorSecundario: #fff;
+  --colorIco: #1761c1;
+  --colorFondoModal: #ffa10a;
+}
 body {
   margin: 0;
   padding: 0;
+  width: 100vw;
+  height: 100vh;
+  /* box-sizing: border-box; */
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--colorPrincipal);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: #1761c1;
 }
 .container {
+  height: 100%;
   display: grid;
   grid-template-columns: 25% 75%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  margin: 20px;
+  box-shadow: 5px 10px 18px #888888;
 }
 .left {
-  /* background-color: yellow; */
-  border: 1px solid black;
+  background-color: var(--colorSecundario);
+  margin: 10px;
+  /* border: 1px solid black; */
 }
 .imgContainer {
-  height: 50%;
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid black; */
+}
+.imgUser {
+  margin-top: 15px;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+}
+.titleContainer {
+  font-size: 1.5em;
+  font-weight: bold;
 }
 .nameUser {
   text-align: center;
 }
-.imgContainer img {
-  border-radius: 50%;
+.verCV {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  /* border: 1px solid black; */
+}
+.verCV a {
+  font-weight: 400;
+  font-size: 1.1em;
+  text-decoration: none;
+  color: black;
+}
+.ico {
+  color: var(--colorIco);
+  font-size: 1.5em;
+}
+.icon {
+  color: var(--colorIco);
+  font-size: 1.5em;
+  position: fixed;
+  top: 100px;
+  right: 40px;
+}
+.icoMenu {
+  color: var(--colorIco);
+  font-size: 1.5em;
+  position: absolute;
+  right: 10px;
 }
 .detailsMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   cursor: pointer;
+  position: relative;
+  padding: 15px;
 }
 .detailsMenu li {
   list-style: none;
 }
 .detailsMenu a {
+  font-size: 1.1em;
   text-decoration: none;
   color: black;
 }
@@ -38,41 +106,32 @@ summary {
   outline: 0;
 }
 .right {
-  /* background-color: blue; */
-  border: 1px solid black;
+  margin: 10px;
+  background-color: var(--colorSecundario);
   display: flex;
   align-items: center;
-  justify-items: center;
   justify-content: center;
-
-  /* width: 99%;
-  height: 100%; */
+  /* border: 1px solid black; */
 }
 .containerModal {
   display: none;
+  align-items: center;
   justify-content: center;
-  border: 1px solid black;
-  width: 80%;
-  height: 80%;
+  width: 90%;
+  height: 90%;
 }
 .contenidoModal {
   display: flex;
   justify-content: center;
   width: 100%;
   height: 100%;
+  background-color: var(--colorFondoModal);
   border-radius: 25px;
-  background-color: white;
-  /* position: relative; */
 }
 .containerModal form {
-  /* position: relative;
-  top: 50%;
-  right: 50%;
-  bottom: 50%;
-  left: 50%; */
   padding: 15px;
   text-align: center;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 60%;
 }
 .containerModal input {
@@ -82,4 +141,20 @@ summary {
 }
 .submitBtn {
   border-radius: 25px;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  font-size: 1.1em;
+  color: #fff;
+  background-color: var(--colorIco);
+}
+.footer a {
+  color: #fff;
+  text-decoration: none;
 }

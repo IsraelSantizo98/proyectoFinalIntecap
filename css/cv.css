@@ -1,0 +1,230 @@
+:root {
+  --colorPrimario: #009688;
+  --colorSecundario: #ffffff;
+  --colorTerciario: #f1f1f1;
+  --colorTitulo: #757575;
+  --colorDivision: #eeeeee;
+  --skillBasica: linear-gradient(to right, #58C77A);
+  --skillTotal:  background: linear-gradient(to right, #58C77A, #18A643, #0B812F);
+}
+.wrapper {
+  width: 1375px;
+  margin: 0 auto;
+  /* border: 1px solid black; */
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  background-color: var(--colorTerciario);
+  margin-top: 20px;
+  margin: 0;
+  padding: 0;
+}
+/**/
+.main {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  grid-template-areas: "left right1" "left right2";
+  grid-gap: 20px;
+  box-shadow: 5px 10px 18px #888888;
+}
+.left {
+  grid-area: left;
+  background-color: var(--colorSecundario);
+}
+/*profile*/
+.profile {
+  position: relative;
+  height: 450px;
+  width: 100%;
+}
+.profile img{
+  height: 100%;
+  width: 100%;
+}
+.profileName{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  margin-left: 15px;
+  font-size: 30px;
+}
+.profileNameTitle {
+  color: #fff;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+hr {
+  margin-top: 20px;
+}
+
+.blockIcon {
+  display: block;
+}
+/* .profileName::before {
+  content: " » ";
+}
+.profileName::before {
+  content: " ";
+} */
+/*Skill*/
+.division {
+  color: var(--colorDivision);
+}
+.skill {
+  height: 25px;
+  /* width: 450px; */
+  background-color: var(--colorTerciario);
+  border-radius: 25px;
+}
+/*JS*/
+.colorGreenJS{
+  height: inherit;
+  width: 20%;
+  background: linear-gradient(to right, #7BE475, #7BE475);
+  border-radius: 25px;
+}
+.skillPorcentajeJS{
+  display: flex;
+  justify-content: center;
+  padding-top: 4px;
+  color: var(--colorSecundario);
+  font-size: 15px;
+}
+/*HTML*/
+.skillPorcentajeHTML{
+  display: flex;
+  justify-content: center;
+  padding-top: 4px;
+  color: var(--colorSecundario);
+  font-size: 15px;
+}
+.colorGreenHTML{
+  height: inherit;
+  width: 80%;
+  background: linear-gradient(to right, #7BE475, #18A643, #11B608);
+  border-radius: 25px;
+}
+/*CSS*/
+.skillPorcentajeCSS{
+  display: flex;
+  justify-content: center;
+  padding-top: 4px;
+  color: var(--colorSecundario);
+  font-size: 15px;
+}
+.colorGreenCSS{
+  height: inherit;
+  width: 60%;
+  background: linear-gradient(to right, #7BE475, #18A643, #11B608);
+  border-radius: 25px;
+}/*PHP*/
+.skillPorcentajePHP{
+  display: flex;
+  justify-content: center;
+  padding-top: 4px;
+  color: var(--colorSecundario);
+  font-size: 15px;
+}
+.colorGreenPHP {
+  height: inherit;
+  width: 40%;
+  background: linear-gradient(to right, #7BE475, #52D64B, #32CB2A);
+  border-radius: 25px;
+}
+/*Espaniol*/
+.skillPorcentajeEspaniol{
+  display: flex;
+  justify-content: center;
+  padding-top: 4px;
+  color: var(--colorSecundario);
+  font-size: 15px;
+}
+.colorGreenEspaniol {
+  height: inherit;
+  width: 100%;
+  background: linear-gradient(to right, #7BE475, #18A643, #0B812F);
+  border-radius: 25px;
+}
+/*Ingles*/
+.skillPorcentajeIngles{
+  display: flex;
+  justify-content: center;
+  padding-top: 4px;
+  color: var(--colorSecundario);
+  font-size: 15px;
+}
+.colorGreenIngles {
+  height: inherit;
+  width: 40%;
+  background: linear-gradient(to right, #7BE475, #52D64B, #32CB2A);
+  border-radius: 25px;
+}
+/*Languages*/
+/*Lado derecho 1*/
+.right1 {
+  grid-area: right1;
+  background-color: var(--colorSecundario);
+}
+.right1Icon {
+  display: flex;
+  align-items: center;
+}
+.right1Icon img {
+  margin-right: 10px;
+}
+/*Right 2*/
+.education {
+  grid-area: right2;
+  background-color: var(--colorSecundario);
+  /* margin-bottom: 10px; */
+}
+.educationContainer {
+  margin: 0;
+  padding: 20px;
+}
+.educationIcon {
+  display: flex;
+  align-items: center;
+}
+.icoLeft{
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+.educationTitle {
+  display: inline;
+}
+/*Footer*/
+.footer {
+  width: 100%;
+  height: 100px;
+  margin-top: 25px;
+  padding: 0;
+  background: linear-gradient(90deg,#1c3643,#273b47 25%, #1e5372);
+}
+.footerContainer {
+  text-align: center;
+}
+.iconContainer {
+  text-align: center;
+}
+.footerContainer a {
+  text-decoration: none;
+  color: #fff;
+}
+.footerContainer p {
+  color: #fff;
+}
+.ico{
+  margin-left: 10px;
+  color: #fff;
+  font-size: 1.5em;
+}

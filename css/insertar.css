@@ -1,0 +1,55 @@
+:root {
+  --colorBtn: #1761c1;
+  --colorFondoModal: #ffa10a;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+.fondoContenido {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 80%;
+}
+.contenido {
+  text-align: center;
+  height: 60%;
+  width: 60%;
+  background-color: #fff;
+  border-radius: 25px;
+  position: relative;
+}
+.container {
+  position: absolute;
+  /* background-color: var(--colorFondoModal); */
+  height: 50%;
+  width: 50%;
+  top: 30%;
+  left: 25%;
+}
+#exito {
+  font-size: 2em;
+}
+.btnAceptar {
+  border-radius: 25px;
+  padding: 5px 30px;
+  background-color: var(--colorBtn);
+  text-decoration: none;
+  color: white;
+}
+.btnAceptar:hover {
+  background-color: blue;
+}

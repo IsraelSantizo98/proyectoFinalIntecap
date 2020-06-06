@@ -34,8 +34,10 @@ function expand() {
 function primerForm() {
   document.getElementById("container-Modal").style.display = "flex";
   document.getElementById("container-Modal2").style.display = "none";
+  document.getElementById("title-Container").style.display = "none";
 }
 function segundoForm() {
   document.getElementById("container-Modal").style.display = "none";
   document.getElementById("container-Modal2").style.display = "flex";
+  document.getElementById("title-Container").style.display = "none";
 }
