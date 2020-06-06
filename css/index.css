@@ -2,7 +2,9 @@
   --colorPrincipal: #f1f1f1;
   --colorSecundario: #fff;
   --colorIco: #1761c1;
-  --colorFondoModal: #ffa10a;
+  --colorFondoModal: #c4b785;
+  --colorLogOut: #fff;
+  /* --colorFondoModal: #ffa10a; */
 }
 body {
   margin: 0;
@@ -22,7 +24,8 @@ body {
 .header {
   width: 100%;
   height: 60px;
-  background-color: #1761c1;
+  /* background-color: #1761c1; */
+  background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5372);
 }
 .container {
   height: 100%;
@@ -30,11 +33,12 @@ body {
   grid-template-columns: 25% 75%;
   /* border: 1px solid black; */
   margin: 20px;
-  box-shadow: 5px 10px 18px #888888;
+  /* box-shadow: 5px 10px 18px #888888; */
 }
 .left {
   background-color: var(--colorSecundario);
   margin: 10px;
+  box-shadow: 5px 10px 18px #888888;
   /* border: 1px solid black; */
 }
 .imgContainer {
@@ -74,10 +78,10 @@ body {
   font-size: 1.5em;
 }
 .icon {
-  color: var(--colorIco);
+  color: var(--colorLogOut);
   font-size: 1.5em;
   position: fixed;
-  top: 100px;
+  top: 20px;
   right: 40px;
 }
 .icoMenu {
@@ -111,6 +115,7 @@ summary {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 5px 10px 18px #888888;
   /* border: 1px solid black; */
 }
 .containerModal {
@@ -152,7 +157,8 @@ summary {
   width: 100%;
   font-size: 1.1em;
   color: #fff;
-  background-color: var(--colorIco);
+  /* background-color: var(--colorIco); */
+  background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5372);
 }
 .footer a {
   color: #fff;
